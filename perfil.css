@@ -55,7 +55,6 @@ body {
 
 /* Profile Container */
 .divpequeno1 {
-    width: 0%;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -65,17 +64,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 90px;
-    width: 90%;
-
+    flex-basis: 90%;
+    margin: 20px;
 }
 
 .profile-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 
 .photo-placeholder {
@@ -126,25 +122,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 /* Sidebar */
 .divpequeno2 {
-    width: 10%;
     display: flex;
     flex-direction: column;
-    right: 20px;
-    top: 120px;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-right: 2%; 
     margin: 20px;
-    margin-left: 2%; 
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 10px;
-
-
+    flex-basis: 10%;
 }
 
 .ad {
@@ -163,9 +153,50 @@ body {
     color: #333;
     margin: 0;
 }
-.divgrande{
- display: flex;
- flex-direction: row;
- 
+
+.divgrande {
+    display: flex;
+    flex-direction: row;
 }
 
+/* Profile Analysis */
+.profile-analysis {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions, .analysis, .activity {
+    margin-bottom: 20px;
+}
+
+.suggestions h3, .analysis h3, .activity h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #0073b1;
+}
+
+.suggestion-item, .analysis-item {
+    margin-bottom: 15px;
+}
+
+.suggestion-item p, .analysis-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.btn-add, .btn-create {
+    padding: 8px 12px;
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.btn-add:hover, .btn-create:hover {
+    background-color: #005f8a;
+}
