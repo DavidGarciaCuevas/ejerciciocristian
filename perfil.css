@@ -200,3 +200,29 @@ body {
 .btn-add:hover, .btn-create:hover {
     background-color: #005f8a;
 }
+.barra_navegacion { /*Uso de Flexbox*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+
+}
+
+.barra_navegacion .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0073b1; 
+}
+
+.barra_navegacion .menu { /*Uso de Flexbox*/
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 2rem;
+}
